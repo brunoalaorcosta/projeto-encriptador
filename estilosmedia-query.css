@@ -4,16 +4,16 @@
  
     .container-input{
         display: block;
-        padding-left: 60px;
+        
     }
 
     .output{
         display: block;
-        padding-left: 60px;
+        
     }
 
     .container-bnt {
-        padding-left: 50px;
+        
         margin-top: 50px;
         
     }
@@ -26,11 +26,22 @@
     footer img{
         max-width: 30px;
         max-height: 30px;
+        margin-right: 50px;
+        
+        
+        
     }
 
     .input , p{
         display: inline-block;
         padding-bottom: 10px;
+        
+    }
+
+    p{
+        display: none;
+        
+
     }
 
 }

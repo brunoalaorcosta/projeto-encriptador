@@ -21,7 +21,6 @@ body {
     
 }
 
-
 .cabecalho h1 {
     color:#0A3871;
     padding-right: 30px;
@@ -38,7 +37,6 @@ body {
     height: 330px;
 }
 
-
 #input-texto{
     width: 345px;
     height: 330px;
@@ -50,6 +48,23 @@ body {
     outline: 0;
     padding: 10px;
 }
+
+#texto-output{
+    display:flex;
+    flex-direction: column;
+    width: 340px;
+    height:800px;
+    border: none;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background: transparent;
+    box-shadow: none;
+    font-size: 20px;
+    color: #0A3871;
+    padding: 10px;
+}
+
+
 #output{
     display: flex;
     flex-direction:column;
@@ -58,20 +73,6 @@ body {
     width: 350px;
     height: 500px;
     margin-right: 3%;
-
-
-}
-
-#output h2{
-    text-align: center;
-    font-size: 20px;
-    color: #0A3871;
-
-}
-#output h3{
-    font-size: 15px;
-    text-align: center;
-
 
 }
 #output img{
@@ -98,7 +99,6 @@ body {
 .container-bnt{
     margin-bottom: 100px;
 }
-
 
 .btn-copiar {
     border: 2px solid black;
@@ -141,3 +141,4 @@ footer p{
     margin-top: 2px;
     text-decoration: none;
 }
+

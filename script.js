@@ -1,13 +1,13 @@
 var textInput = document.getElementById('input-texto');
-var outInput = document.getElementById('output')
+var outInput = document.getElementById('output');
 
 function criptografar(){
 
      var texto = textInput.value;
 
-     var resultCripto = texto.replace(/e/, "enter").replace(/i/, "imes").replace(/a/, "ai").replace(/o/, "ober").replace(/u/, "ufat")
+     var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
 
-     document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">'  +  resultCripto  + 
+     document.getElementById('output').innerHTML = '<textarea readonly id="texto-output">'  +  resultCripto  + 
      '</textarea>'  +  '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
    }
 
@@ -15,16 +15,19 @@ function descriptografar(){
    
     var texto = textInput.value;
 
-    var resultDescripto = texto.replace(/enter/ , "e").replace(/imes/,"i").replace(/ai/, "a").replace(/ober/, "o").replace(/ufat/, "u")
+    var resultDescripto = texto.replace(/enter/g , "e").replace(/imes/g,"i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u")
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">'  +  resultDescripto  + 
+    document.getElementById('output').innerHTML = '<textarea readonly id="texto-output">'  +  resultDescripto  + 
      '</textarea>'  +  '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
 
 }
+ 
+
 function copiar(){
-     var textoCop = document.getElementById('input-texto');
+     var textoCop = document.getElementById('texto-output');
 
      textoCop.select();
      document.execCommand('copy');
-     alert("Texto copiado")
+     
 }
+

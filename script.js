@@ -9,7 +9,7 @@ function criptografar(){
 
      document.getElementById('output').innerHTML = '<textarea readonly id="texto-output">'  +  resultCripto  + 
      '</textarea>'  +  '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
-   }
+}
 
 function descriptografar(){
    

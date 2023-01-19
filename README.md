@@ -1,2 +1,2 @@
 # projeto-encriptador
- Projeto encriptador de texto utilizando javascript
+ Projeto encriptador de texto utilizand Javascript
